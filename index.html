@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="n1" type="text" placeholder="Sentence 1">
+    <br>
+    <br>
+   
+    <input id="n2" type="text" placeholder="Sentence 2">
+    <br>
+    <br>
+    <input id="n3" type="text" placeholder="Sentence 3">
+    <br>
+    <br>
+    <input id="n4" type="text" placeholder="Sentence 4">
+    <br>
+    <br>
+    <input id="n5" type="text" placeholder="Sentence 5">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="show">
+    </div>
+    <button onclick="p()">Para it</button>
+   
+    <script>
+       
+function p() {
+    var word = [];
+ for(var i = 1;i<=5;i++)
+ {
+     word.push(document.getElementById("n"+i).value);
+    
+ }
+ word.join(". ");
+ document.getElementById("show").innerHTML = word.join(". ");
+}
+    </script>
+
+
+</body>
+</html>
